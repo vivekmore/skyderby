@@ -1,35 +1,32 @@
 'use client'
 
 import { useMemo } from 'react'
-import { APIProvider, Map } from '@vis.gl/react-google-maps'
+import { MapContainer, TileLayer, Polyline, useMap } from 'react-leaflet'
+import type { LatLngExpression } from 'leaflet'
 import { useTranslations } from 'next-intl'
+import 'leaflet/dist/leaflet.css'
 import type { TrackPoint } from '@/lib/api/types'
 
-function TrajectoryPolyline({ points }: { points: TrackPoint[] }) {
-  // Rendered via the imperative Maps API once the map is ready.
-  // Kept intentionally simple; a richer speed-coloured polyline can replace this.
-  return (
-    <Map
-      defaultZoom={13}
-      defaultCenter={{ lat: points[0]?.latitude ?? 0, lng: points[0]?.longitude ?? 0 }}
-      mapId="skyderby-track"
-      gestureHandling="cooperative"
-      disableDefaultUI={false}
-      style={{ width: '100%', height: '100%' }}
-    />
-  )
+function FitBounds({ positions }: { positions: LatLngExpression[] }) {
+  const map = useMap()
+  if (positions.length > 0) {
+    map.fitBounds(positions as [number, number][], { padding: [24, 24] })
+  }
+  return null
 }
 
 export function TrackMap({ points }: { points: TrackPoint[] }) {
   const t = useTranslations('viewer')
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
 
-  const hasPoints = useMemo(() => points.length > 0, [points])
+  const positions = useMemo<LatLngExpression[]>(
+    () => points.map((p) => [p.latitude, p.longitude]),
+    [points]
+  )
 
-  if (!apiKey) {
+  if (positions.length === 0) {
     return (
-      <div className="flex h-72 items-center justify-center rounded-md border border-dashed border-slate-300 bg-slate-50 px-4 text-center text-sm text-slate-500">
-        {t('mapKeyMissing')}
+      <div className="flex h-72 items-center justify-center rounded-md border border-dashed border-slate-300 bg-slate-50 text-sm text-slate-500">
+        {t('trajectory')}
       </div>
     )
   }
@@ -40,9 +37,19 @@ export function TrackMap({ points }: { points: TrackPoint[] }) {
       aria-label={t('trajectory')}
       className="h-72 overflow-hidden rounded-md border border-slate-200"
     >
-      <APIProvider apiKey={apiKey}>
-        {hasPoints ? <TrajectoryPolyline points={points} /> : null}
-      </APIProvider>
+      <MapContainer
+        center={positions[0]}
+        zoom={13}
+        scrollWheelZoom={false}
+        style={{ height: '100%', width: '100%' }}
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <Polyline positions={positions} pathOptions={{ color: '#0284c7', weight: 4 }} />
+        <FitBounds positions={positions} />
+      </MapContainer>
     </div>
   )
 }

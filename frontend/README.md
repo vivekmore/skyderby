@@ -12,7 +12,7 @@ stays authoritative for data, scoring, payments, auth and realtime.
 | Data fetching | Server Components + TanStack Query |
 | Tables | TanStack Table |
 | Charts | Highcharts (`highcharts-react-official`) |
-| Maps | `@vis.gl/react-google-maps` |
+| Maps | Leaflet + OpenStreetMap (`react-leaflet`, keyless) |
 | Forms | React Hook Form + Zod |
 | Styling | Tailwind CSS + shadcn-style components |
 | i18n | next-intl (en, ru, de, it, es, fr) |
@@ -36,7 +36,8 @@ locally, start Next on another port: `npm run dev -- -p 3100`.
 | --- | --- |
 | `API_BASE_URL` | Rails API base for server-side fetches |
 | `NEXT_PUBLIC_API_BASE_URL` | Rails API base for the browser + ActionCable |
-| `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` | Google Maps key (map shows a placeholder without it) |
+| `OAUTH_CLIENT_ID` | Doorkeeper public client id (enables the login flow) |
+| `OAUTH_REDIRECT_URI` | OAuth callback (defaults to `/api/auth/callback`) |
 
 ## Scripts
 
@@ -60,7 +61,7 @@ npm run format       # prettier --write
 - **Online competitions** (`/[locale]/online-competitions`): SSR list from
   `/api/v1/virtual_competitions` with an empty state.
 - **Track viewer** (`/[locale]/tracks/demo`): Highcharts speed/glide/altitude chart
-  and a Google Maps trajectory panel, driven by a representative sample jump.
+  and a Leaflet/OpenStreetMap trajectory panel, driven by a representative sample jump.
 
 See issue #10 for the full migration plan and the remaining phases.
 
