@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "suits": "Combinaisons",
+    "places": "Lieux",
+    "profiles": "Athlètes",
+    "onlineCompetitions": "Compétitions en ligne",
+    "trackViewer": "Visualiseur de tracks",
+    "membership": "Abonnement",
+    "search": "Recherche"
+  },
+  "membership": {
+    "title": "Abonnement",
+    "subtitle": "Soutenez Skyderby et débloquez les fonctions premium.",
+    "cta": "Gérer votre abonnement",
+    "note": "Le paiement et la facturation sont gérés en toute sécurité sur le site principal de Skyderby."
+  },
+  "places": {
+    "title": "Lieux",
+    "subtitle": "Dropzones et points de sortie dans le monde entier.",
+    "search": "Rechercher des lieux ou des pays",
+    "columns": { "name": "Lieu", "country": "Pays", "kind": "Type" },
+    "kinds": { "skydive": "Skydive", "base": "BASE" },
+    "empty": "Aucun lieu ne correspond à votre recherche.",
+    "count": "{count, plural, =0 {Aucun lieu} one {# lieu} other {# lieux}}"
+  },
+  "profiles": {
+    "title": "Athlètes",
+    "subtitle": "Parcourez et recherchez les athlètes de la base.",
+    "search": "Rechercher des athlètes par nom",
+    "columns": { "name": "Nom" },
+    "empty": "Aucun athlète ne correspond à votre recherche.",
+    "count": "{count, plural, =0 {Aucun athlète} one {# athlète} other {# athlètes}}"
+  },
+  "search": {
+    "title": "Recherche",
+    "subtitle": "Recherchez dans les combinaisons, lieux et athlètes en une fois.",
+    "placeholder": "Rechercher dans Skyderby",
+    "prompt": "Saisissez pour rechercher sur le site.",
+    "noResults": "Aucun résultat pour « {query} ».",
+    "groups": { "suits": "Combinaisons", "places": "Lieux", "profiles": "Athlètes" }
+  },
+  "home": {
+    "title": "Skyderby",
+    "tagline": "Analyse des tracks GPS, classements et notation des compétitions pour parachutistes et base jumpers.",
+    "exploreSuits": "Parcourir le catalogue de combinaisons",
+    "exploreCompetitions": "Voir les compétitions en ligne",
+    "exploreViewer": "Ouvrir le visualiseur de tracks"
+  },
+  "suits": {
+    "title": "Catalogue de combinaisons",
+    "subtitle": "Toutes les wingsuits, tracksuits et slicks de la base de données.",
+    "search": "Rechercher des combinaisons ou fabricants",
+    "category": "Catégorie",
+    "allCategories": "Toutes les catégories",
+    "columns": {
+      "name": "Combinaison",
+      "make": "Fabricant",
+      "category": "Catégorie"
+    },
+    "categories": {
+      "wingsuit": "Wingsuit",
+      "tracksuit": "Tracksuit",
+      "slick": "Slick"
+    },
+    "count": "{count, plural, =0 {Aucune combinaison} one {# combinaison} other {# combinaisons}}",
+    "empty": "Aucune combinaison ne correspond à votre recherche."
+  },
+  "competitions": {
+    "title": "Compétitions en ligne",
+    "subtitle": "Classements ouverts auxquels participer avec vos propres tracks.",
+    "columns": {
+      "name": "Compétition",
+      "discipline": "Discipline",
+      "group": "Groupe"
+    },
+    "empty": "Aucune compétition en ligne n'est disponible pour le moment."
+  },
+  "viewer": {
+    "title": "Visualiseur de tracks",
+    "subtitle": "Vitesse, finesse et altitude au cours du saut, avec la trajectoire sur la carte.",
+    "speed": "Vitesse",
+    "glide": "Finesse",
+    "altitude": "Altitude",
+    "horizontalSpeed": "Vitesse horizontale",
+    "verticalSpeed": "Vitesse verticale",
+    "trajectory": "Trajectoire",
+    "mapKeyMissing": "Définissez NEXT_PUBLIC_GOOGLE_MAPS_API_KEY pour afficher la carte.",
+    "sampleNotice": "Un saut d'exemple est affiché."
+  },
+  "errors": {
+    "loadFailed": "Impossible de charger les données de l'API. Le serveur Rails est-il démarré ?"
+  }
+}

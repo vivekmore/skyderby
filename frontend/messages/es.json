@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "suits": "Trajes",
+    "places": "Lugares",
+    "profiles": "Atletas",
+    "onlineCompetitions": "Competiciones online",
+    "trackViewer": "Visor de tracks",
+    "membership": "Membresía",
+    "search": "Buscar"
+  },
+  "membership": {
+    "title": "Membresía",
+    "subtitle": "Apoya a Skyderby y desbloquea funciones premium.",
+    "cta": "Gestionar tu suscripción",
+    "note": "El pago y la facturación se gestionan de forma segura en el sitio principal de Skyderby."
+  },
+  "places": {
+    "title": "Lugares",
+    "subtitle": "Zonas de salto y puntos de salida por todo el mundo.",
+    "search": "Buscar lugares o países",
+    "columns": { "name": "Lugar", "country": "País", "kind": "Tipo" },
+    "kinds": { "skydive": "Skydive", "base": "BASE" },
+    "empty": "Ningún lugar coincide con tu búsqueda.",
+    "count": "{count, plural, =0 {Sin lugares} one {# lugar} other {# lugares}}"
+  },
+  "profiles": {
+    "title": "Atletas",
+    "subtitle": "Explora y busca atletas en la base de datos.",
+    "search": "Buscar atletas por nombre",
+    "columns": { "name": "Nombre" },
+    "empty": "Ningún atleta coincide con tu búsqueda.",
+    "count": "{count, plural, =0 {Sin atletas} one {# atleta} other {# atletas}}"
+  },
+  "search": {
+    "title": "Buscar",
+    "subtitle": "Busca en trajes, lugares y atletas a la vez.",
+    "placeholder": "Buscar en Skyderby",
+    "prompt": "Escribe para buscar en el sitio.",
+    "noResults": "Nada coincide con \"{query}\".",
+    "groups": { "suits": "Trajes", "places": "Lugares", "profiles": "Atletas" }
+  },
+  "home": {
+    "title": "Skyderby",
+    "tagline": "Análisis de tracks GPS, rankings y puntuación de competiciones para paracaidistas y saltadores BASE.",
+    "exploreSuits": "Explorar el catálogo de trajes",
+    "exploreCompetitions": "Ver competiciones online",
+    "exploreViewer": "Abrir el visor de tracks"
+  },
+  "suits": {
+    "title": "Catálogo de trajes",
+    "subtitle": "Todos los wingsuits, tracksuits y slicks de la base de datos.",
+    "search": "Buscar trajes o fabricantes",
+    "category": "Categoría",
+    "allCategories": "Todas las categorías",
+    "columns": {
+      "name": "Traje",
+      "make": "Fabricante",
+      "category": "Categoría"
+    },
+    "categories": {
+      "wingsuit": "Wingsuit",
+      "tracksuit": "Tracksuit",
+      "slick": "Slick"
+    },
+    "count": "{count, plural, =0 {Sin trajes} one {# traje} other {# trajes}}",
+    "empty": "Ningún traje coincide con tu búsqueda."
+  },
+  "competitions": {
+    "title": "Competiciones online",
+    "subtitle": "Rankings abiertos en los que puedes participar con tus propios tracks.",
+    "columns": {
+      "name": "Competición",
+      "discipline": "Disciplina",
+      "group": "Grupo"
+    },
+    "empty": "No hay competiciones online disponibles en este momento."
+  },
+  "viewer": {
+    "title": "Visor de tracks",
+    "subtitle": "Velocidad, planeo y altitud a lo largo del salto, con la trayectoria en el mapa.",
+    "speed": "Velocidad",
+    "glide": "Ratio de planeo",
+    "altitude": "Altitud",
+    "horizontalSpeed": "Velocidad horizontal",
+    "verticalSpeed": "Velocidad vertical",
+    "trajectory": "Trayectoria",
+    "mapKeyMissing": "Define NEXT_PUBLIC_GOOGLE_MAPS_API_KEY para mostrar el mapa.",
+    "sampleNotice": "Se muestra un salto de ejemplo."
+  },
+  "errors": {
+    "loadFailed": "No se pudieron cargar los datos de la API. ¿Está el servidor Rails en marcha?"
+  }
+}

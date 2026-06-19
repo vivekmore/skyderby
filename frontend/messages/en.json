@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "home": "Home",
+    "suits": "Suits",
+    "places": "Places",
+    "profiles": "Athletes",
+    "onlineCompetitions": "Online competitions",
+    "trackViewer": "Track viewer",
+    "membership": "Membership",
+    "search": "Search"
+  },
+  "membership": {
+    "title": "Membership",
+    "subtitle": "Support Skyderby and unlock premium features.",
+    "cta": "Manage your subscription",
+    "note": "Checkout and billing are handled securely on the main Skyderby site."
+  },
+  "places": {
+    "title": "Places",
+    "subtitle": "Drop zones and exit points around the world.",
+    "search": "Search places or countries",
+    "columns": { "name": "Place", "country": "Country", "kind": "Type" },
+    "kinds": { "skydive": "Skydive", "base": "BASE" },
+    "empty": "No places match your search.",
+    "count": "{count, plural, =0 {No places} one {# place} other {# places}}"
+  },
+  "profiles": {
+    "title": "Athletes",
+    "subtitle": "Browse and search the athletes in the database.",
+    "search": "Search athletes by name",
+    "columns": { "name": "Name" },
+    "empty": "No athletes match your search.",
+    "count": "{count, plural, =0 {No athletes} one {# athlete} other {# athletes}}"
+  },
+  "search": {
+    "title": "Search",
+    "subtitle": "Search across suits, places and athletes at once.",
+    "placeholder": "Search Skyderby",
+    "prompt": "Type to search across the site.",
+    "noResults": "Nothing matched \"{query}\".",
+    "groups": { "suits": "Suits", "places": "Places", "profiles": "Athletes" }
+  },
+  "home": {
+    "title": "Skyderby",
+    "tagline": "GPS track analysis, rankings and competition scoring for skydivers and BASE jumpers.",
+    "exploreSuits": "Browse the suit catalog",
+    "exploreCompetitions": "See online competitions",
+    "exploreViewer": "Open the track viewer"
+  },
+  "suits": {
+    "title": "Suit catalog",
+    "subtitle": "Every wingsuit, tracksuit and slick in the database.",
+    "search": "Search suits or manufacturers",
+    "category": "Category",
+    "allCategories": "All categories",
+    "columns": {
+      "name": "Suit",
+      "make": "Manufacturer",
+      "category": "Category"
+    },
+    "categories": {
+      "wingsuit": "Wingsuit",
+      "tracksuit": "Tracksuit",
+      "slick": "Slick"
+    },
+    "count": "{count, plural, =0 {No suits} one {# suit} other {# suits}}",
+    "empty": "No suits match your search."
+  },
+  "competitions": {
+    "title": "Online competitions",
+    "subtitle": "Open rankings you can enter with your own tracks.",
+    "columns": {
+      "name": "Competition",
+      "discipline": "Discipline",
+      "group": "Group"
+    },
+    "empty": "No online competitions are available right now."
+  },
+  "viewer": {
+    "title": "Track viewer",
+    "subtitle": "Speed, glide and altitude over the course of a jump, with the flown trajectory on the map.",
+    "speed": "Speed",
+    "glide": "Glide ratio",
+    "altitude": "Altitude",
+    "horizontalSpeed": "Horizontal speed",
+    "verticalSpeed": "Vertical speed",
+    "trajectory": "Trajectory",
+    "mapKeyMissing": "Set NEXT_PUBLIC_GOOGLE_MAPS_API_KEY to display the map.",
+    "sampleNotice": "Showing a representative sample jump."
+  },
+  "errors": {
+    "loadFailed": "Could not load data from the API. Is the Rails server running?"
+  }
+}

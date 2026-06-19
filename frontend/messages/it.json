@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "home": "Home",
+    "suits": "Tute",
+    "places": "Luoghi",
+    "profiles": "Atleti",
+    "onlineCompetitions": "Competizioni online",
+    "trackViewer": "Visualizzatore tracce",
+    "membership": "Abbonamento",
+    "search": "Cerca"
+  },
+  "membership": {
+    "title": "Abbonamento",
+    "subtitle": "Sostieni Skyderby e sblocca le funzioni premium.",
+    "cta": "Gestisci l'abbonamento",
+    "note": "Il pagamento e la fatturazione avvengono in sicurezza sul sito principale di Skyderby."
+  },
+  "places": {
+    "title": "Luoghi",
+    "subtitle": "Dropzone e punti di uscita in tutto il mondo.",
+    "search": "Cerca luoghi o paesi",
+    "columns": { "name": "Luogo", "country": "Paese", "kind": "Tipo" },
+    "kinds": { "skydive": "Skydive", "base": "BASE" },
+    "empty": "Nessun luogo corrisponde alla ricerca.",
+    "count": "{count, plural, =0 {Nessun luogo} one {# luogo} other {# luoghi}}"
+  },
+  "profiles": {
+    "title": "Atleti",
+    "subtitle": "Sfoglia e cerca gli atleti nel database.",
+    "search": "Cerca atleti per nome",
+    "columns": { "name": "Nome" },
+    "empty": "Nessun atleta corrisponde alla ricerca.",
+    "count": "{count, plural, =0 {Nessun atleta} one {# atleta} other {# atleti}}"
+  },
+  "search": {
+    "title": "Cerca",
+    "subtitle": "Cerca tra tute, luoghi e atleti contemporaneamente.",
+    "placeholder": "Cerca in Skyderby",
+    "prompt": "Digita per cercare nel sito.",
+    "noResults": "Nessun risultato per \"{query}\".",
+    "groups": { "suits": "Tute", "places": "Luoghi", "profiles": "Atleti" }
+  },
+  "home": {
+    "title": "Skyderby",
+    "tagline": "Analisi delle tracce GPS, classifiche e punteggi per paracadutisti e BASE jumper.",
+    "exploreSuits": "Sfoglia il catalogo tute",
+    "exploreCompetitions": "Vedi le competizioni online",
+    "exploreViewer": "Apri il visualizzatore tracce"
+  },
+  "suits": {
+    "title": "Catalogo tute",
+    "subtitle": "Tutte le wingsuit, tracksuit e slick presenti nel database.",
+    "search": "Cerca tute o produttori",
+    "category": "Categoria",
+    "allCategories": "Tutte le categorie",
+    "columns": {
+      "name": "Tuta",
+      "make": "Produttore",
+      "category": "Categoria"
+    },
+    "categories": {
+      "wingsuit": "Wingsuit",
+      "tracksuit": "Tracksuit",
+      "slick": "Slick"
+    },
+    "count": "{count, plural, =0 {Nessuna tuta} one {# tuta} other {# tute}}",
+    "empty": "Nessuna tuta corrisponde alla ricerca."
+  },
+  "competitions": {
+    "title": "Competizioni online",
+    "subtitle": "Classifiche aperte a cui partecipare con le proprie tracce.",
+    "columns": {
+      "name": "Competizione",
+      "discipline": "Disciplina",
+      "group": "Gruppo"
+    },
+    "empty": "Al momento non ci sono competizioni online disponibili."
+  },
+  "viewer": {
+    "title": "Visualizzatore tracce",
+    "subtitle": "Velocità, planata e quota durante il salto, con la traiettoria sulla mappa.",
+    "speed": "Velocità",
+    "glide": "Rapporto di planata",
+    "altitude": "Quota",
+    "horizontalSpeed": "Velocità orizzontale",
+    "verticalSpeed": "Velocità verticale",
+    "trajectory": "Traiettoria",
+    "mapKeyMissing": "Imposta NEXT_PUBLIC_GOOGLE_MAPS_API_KEY per mostrare la mappa.",
+    "sampleNotice": "Viene mostrato un salto di esempio."
+  },
+  "errors": {
+    "loadFailed": "Impossibile caricare i dati dall'API. Il server Rails è in esecuzione?"
+  }
+}

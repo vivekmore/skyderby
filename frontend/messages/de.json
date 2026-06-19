@@ -1,0 +1,94 @@
+{
+  "nav": {
+    "home": "Start",
+    "suits": "Anzüge",
+    "places": "Orte",
+    "profiles": "Athleten",
+    "onlineCompetitions": "Online-Wettbewerbe",
+    "trackViewer": "Track-Ansicht",
+    "membership": "Mitgliedschaft",
+    "search": "Suche"
+  },
+  "membership": {
+    "title": "Mitgliedschaft",
+    "subtitle": "Unterstütze Skyderby und schalte Premium-Funktionen frei.",
+    "cta": "Abo verwalten",
+    "note": "Bezahlung und Abrechnung erfolgen sicher auf der Haupt-Website von Skyderby."
+  },
+  "places": {
+    "title": "Orte",
+    "subtitle": "Dropzones und Absprungstellen weltweit.",
+    "search": "Orte oder Länder suchen",
+    "columns": { "name": "Ort", "country": "Land", "kind": "Typ" },
+    "kinds": { "skydive": "Skydive", "base": "BASE" },
+    "empty": "Keine Orte entsprechen deiner Suche.",
+    "count": "{count, plural, =0 {Keine Orte} one {# Ort} other {# Orte}}"
+  },
+  "profiles": {
+    "title": "Athleten",
+    "subtitle": "Athleten in der Datenbank durchsuchen.",
+    "search": "Athleten nach Namen suchen",
+    "columns": { "name": "Name" },
+    "empty": "Keine Athleten entsprechen deiner Suche.",
+    "count": "{count, plural, =0 {Keine Athleten} one {# Athlet} other {# Athleten}}"
+  },
+  "search": {
+    "title": "Suche",
+    "subtitle": "Durchsuche Anzüge, Orte und Athleten auf einmal.",
+    "placeholder": "Skyderby durchsuchen",
+    "prompt": "Tippe, um die Seite zu durchsuchen.",
+    "noResults": "Nichts gefunden für \"{query}\".",
+    "groups": { "suits": "Anzüge", "places": "Orte", "profiles": "Athleten" }
+  },
+  "home": {
+    "title": "Skyderby",
+    "tagline": "GPS-Track-Analyse, Ranglisten und Wettbewerbswertung für Fallschirm- und BASE-Springer.",
+    "exploreSuits": "Anzugkatalog ansehen",
+    "exploreCompetitions": "Online-Wettbewerbe ansehen",
+    "exploreViewer": "Track-Ansicht öffnen"
+  },
+  "suits": {
+    "title": "Anzugkatalog",
+    "subtitle": "Alle Wingsuits, Tracksuits und Slicks in der Datenbank.",
+    "search": "Anzüge oder Hersteller suchen",
+    "category": "Kategorie",
+    "allCategories": "Alle Kategorien",
+    "columns": {
+      "name": "Anzug",
+      "make": "Hersteller",
+      "category": "Kategorie"
+    },
+    "categories": {
+      "wingsuit": "Wingsuit",
+      "tracksuit": "Tracksuit",
+      "slick": "Slick"
+    },
+    "count": "{count, plural, =0 {Keine Anzüge} one {# Anzug} other {# Anzüge}}",
+    "empty": "Keine Anzüge entsprechen deiner Suche."
+  },
+  "competitions": {
+    "title": "Online-Wettbewerbe",
+    "subtitle": "Offene Ranglisten, an denen du mit eigenen Tracks teilnehmen kannst.",
+    "columns": {
+      "name": "Wettbewerb",
+      "discipline": "Disziplin",
+      "group": "Gruppe"
+    },
+    "empty": "Derzeit sind keine Online-Wettbewerbe verfügbar."
+  },
+  "viewer": {
+    "title": "Track-Ansicht",
+    "subtitle": "Geschwindigkeit, Gleitzahl und Höhe über den Sprung hinweg, mit der geflogenen Strecke auf der Karte.",
+    "speed": "Geschwindigkeit",
+    "glide": "Gleitzahl",
+    "altitude": "Höhe",
+    "horizontalSpeed": "Horizontalgeschwindigkeit",
+    "verticalSpeed": "Vertikalgeschwindigkeit",
+    "trajectory": "Strecke",
+    "mapKeyMissing": "Setze NEXT_PUBLIC_GOOGLE_MAPS_API_KEY, um die Karte anzuzeigen.",
+    "sampleNotice": "Es wird ein Beispielsprung angezeigt."
+  },
+  "errors": {
+    "loadFailed": "Daten konnten nicht von der API geladen werden. Läuft der Rails-Server?"
+  }
+}
