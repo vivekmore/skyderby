@@ -2,8 +2,36 @@
   "nav": {
     "home": "Accueil",
     "suits": "Combinaisons",
+    "places": "Lieux",
+    "profiles": "Athlètes",
     "onlineCompetitions": "Compétitions en ligne",
-    "trackViewer": "Visualiseur de tracks"
+    "trackViewer": "Visualiseur de tracks",
+    "search": "Recherche"
+  },
+  "places": {
+    "title": "Lieux",
+    "subtitle": "Dropzones et points de sortie dans le monde entier.",
+    "search": "Rechercher des lieux ou des pays",
+    "columns": { "name": "Lieu", "country": "Pays", "kind": "Type" },
+    "kinds": { "skydive": "Skydive", "base": "BASE" },
+    "empty": "Aucun lieu ne correspond à votre recherche.",
+    "count": "{count, plural, =0 {Aucun lieu} one {# lieu} other {# lieux}}"
+  },
+  "profiles": {
+    "title": "Athlètes",
+    "subtitle": "Parcourez et recherchez les athlètes de la base.",
+    "search": "Rechercher des athlètes par nom",
+    "columns": { "name": "Nom" },
+    "empty": "Aucun athlète ne correspond à votre recherche.",
+    "count": "{count, plural, =0 {Aucun athlète} one {# athlète} other {# athlètes}}"
+  },
+  "search": {
+    "title": "Recherche",
+    "subtitle": "Recherchez dans les combinaisons, lieux et athlètes en une fois.",
+    "placeholder": "Rechercher dans Skyderby",
+    "prompt": "Saisissez pour rechercher sur le site.",
+    "noResults": "Aucun résultat pour « {query} ».",
+    "groups": { "suits": "Combinaisons", "places": "Lieux", "profiles": "Athlètes" }
   },
   "home": {
     "title": "Skyderby",

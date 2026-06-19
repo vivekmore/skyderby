@@ -2,8 +2,36 @@
   "nav": {
     "home": "Start",
     "suits": "Anzüge",
+    "places": "Orte",
+    "profiles": "Athleten",
     "onlineCompetitions": "Online-Wettbewerbe",
-    "trackViewer": "Track-Ansicht"
+    "trackViewer": "Track-Ansicht",
+    "search": "Suche"
+  },
+  "places": {
+    "title": "Orte",
+    "subtitle": "Dropzones und Absprungstellen weltweit.",
+    "search": "Orte oder Länder suchen",
+    "columns": { "name": "Ort", "country": "Land", "kind": "Typ" },
+    "kinds": { "skydive": "Skydive", "base": "BASE" },
+    "empty": "Keine Orte entsprechen deiner Suche.",
+    "count": "{count, plural, =0 {Keine Orte} one {# Ort} other {# Orte}}"
+  },
+  "profiles": {
+    "title": "Athleten",
+    "subtitle": "Athleten in der Datenbank durchsuchen.",
+    "search": "Athleten nach Namen suchen",
+    "columns": { "name": "Name" },
+    "empty": "Keine Athleten entsprechen deiner Suche.",
+    "count": "{count, plural, =0 {Keine Athleten} one {# Athlet} other {# Athleten}}"
+  },
+  "search": {
+    "title": "Suche",
+    "subtitle": "Durchsuche Anzüge, Orte und Athleten auf einmal.",
+    "placeholder": "Skyderby durchsuchen",
+    "prompt": "Tippe, um die Seite zu durchsuchen.",
+    "noResults": "Nichts gefunden für \"{query}\".",
+    "groups": { "suits": "Anzüge", "places": "Orte", "profiles": "Athleten" }
   },
   "home": {
     "title": "Skyderby",

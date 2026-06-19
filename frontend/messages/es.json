@@ -2,8 +2,36 @@
   "nav": {
     "home": "Inicio",
     "suits": "Trajes",
+    "places": "Lugares",
+    "profiles": "Atletas",
     "onlineCompetitions": "Competiciones online",
-    "trackViewer": "Visor de tracks"
+    "trackViewer": "Visor de tracks",
+    "search": "Buscar"
+  },
+  "places": {
+    "title": "Lugares",
+    "subtitle": "Zonas de salto y puntos de salida por todo el mundo.",
+    "search": "Buscar lugares o países",
+    "columns": { "name": "Lugar", "country": "País", "kind": "Tipo" },
+    "kinds": { "skydive": "Skydive", "base": "BASE" },
+    "empty": "Ningún lugar coincide con tu búsqueda.",
+    "count": "{count, plural, =0 {Sin lugares} one {# lugar} other {# lugares}}"
+  },
+  "profiles": {
+    "title": "Atletas",
+    "subtitle": "Explora y busca atletas en la base de datos.",
+    "search": "Buscar atletas por nombre",
+    "columns": { "name": "Nombre" },
+    "empty": "Ningún atleta coincide con tu búsqueda.",
+    "count": "{count, plural, =0 {Sin atletas} one {# atleta} other {# atletas}}"
+  },
+  "search": {
+    "title": "Buscar",
+    "subtitle": "Busca en trajes, lugares y atletas a la vez.",
+    "placeholder": "Buscar en Skyderby",
+    "prompt": "Escribe para buscar en el sitio.",
+    "noResults": "Nada coincide con \"{query}\".",
+    "groups": { "suits": "Trajes", "places": "Lugares", "profiles": "Atletas" }
   },
   "home": {
     "title": "Skyderby",

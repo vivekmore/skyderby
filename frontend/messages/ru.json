@@ -2,8 +2,36 @@
   "nav": {
     "home": "Главная",
     "suits": "Костюмы",
+    "places": "Места",
+    "profiles": "Атлеты",
     "onlineCompetitions": "Онлайн-соревнования",
-    "trackViewer": "Просмотр трека"
+    "trackViewer": "Просмотр трека",
+    "search": "Поиск"
+  },
+  "places": {
+    "title": "Места",
+    "subtitle": "Дропзоны и точки выхода по всему миру.",
+    "search": "Поиск по местам или странам",
+    "columns": { "name": "Место", "country": "Страна", "kind": "Тип" },
+    "kinds": { "skydive": "Скайдайв", "base": "Бейс" },
+    "empty": "Нет мест по вашему запросу.",
+    "count": "{count, plural, =0 {Нет мест} one {# место} few {# места} other {# мест}}"
+  },
+  "profiles": {
+    "title": "Атлеты",
+    "subtitle": "Просмотр и поиск атлетов в базе.",
+    "search": "Поиск атлетов по имени",
+    "columns": { "name": "Имя" },
+    "empty": "Нет атлетов по вашему запросу.",
+    "count": "{count, plural, =0 {Нет атлетов} one {# атлет} few {# атлета} other {# атлетов}}"
+  },
+  "search": {
+    "title": "Поиск",
+    "subtitle": "Поиск по костюмам, местам и атлетам сразу.",
+    "placeholder": "Поиск по Skyderby",
+    "prompt": "Начните вводить для поиска по сайту.",
+    "noResults": "Ничего не найдено по запросу «{query}».",
+    "groups": { "suits": "Костюмы", "places": "Места", "profiles": "Атлеты" }
   },
   "home": {
     "title": "Skyderby",

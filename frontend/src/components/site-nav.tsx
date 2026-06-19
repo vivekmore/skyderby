@@ -7,8 +7,11 @@ import { cn } from '@/lib/utils'
 const ITEMS = [
   { href: '/', key: 'home' as const },
   { href: '/suits', key: 'suits' as const },
+  { href: '/places', key: 'places' as const },
+  { href: '/profiles', key: 'profiles' as const },
   { href: '/online-competitions', key: 'onlineCompetitions' as const },
   { href: '/tracks/demo', key: 'trackViewer' as const },
+  { href: '/search', key: 'search' as const },
 ]
 
 export function SiteNav() {

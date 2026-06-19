@@ -1,0 +1,149 @@
+openapi: 3.0.3
+info:
+  title: Skyderby API
+  version: v1
+  description: >
+    Subset of the Skyderby Rails JSON API (/api/v1) consumed by this frontend.
+    Extend this document as more endpoints are wired in.
+servers:
+  - url: http://localhost:3000/api/v1
+paths:
+  /suits.json:
+    get:
+      summary: List suits
+      operationId: listSuits
+      responses:
+        '200':
+          description: All suits
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Suit'
+  /places.json:
+    get:
+      summary: List places
+      operationId: listPlaces
+      parameters:
+        - name: query
+          in: query
+          schema: { type: string }
+        - name: page
+          in: query
+          schema: { type: integer }
+      responses:
+        '200':
+          description: A page of places
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [places, meta]
+                properties:
+                  places:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Place'
+                  meta:
+                    $ref: '#/components/schemas/PageMeta'
+  /profiles.json:
+    get:
+      summary: List athletes
+      operationId: listProfiles
+      parameters:
+        - name: query
+          in: query
+          schema: { type: string }
+        - name: page
+          in: query
+          schema: { type: integer }
+      responses:
+        '200':
+          description: A page of athletes
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [profiles, meta]
+                properties:
+                  profiles:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Profile'
+                  meta:
+                    $ref: '#/components/schemas/PageMeta'
+  /virtual_competitions.json:
+    get:
+      summary: List online competitions
+      operationId: listOnlineCompetitions
+      responses:
+        '200':
+          description: Online competitions
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  online_competitions:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/OnlineCompetition'
+components:
+  schemas:
+    Suit:
+      type: object
+      required: [id, name, category]
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        make: { type: string, nullable: true }
+        makeCode: { type: string, nullable: true }
+        category:
+          type: string
+          enum: [wingsuit, tracksuit, slick]
+    Place:
+      type: object
+      required: [id, name, kind, latitude, longitude, country]
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        kind:
+          type: string
+          enum: [skydive, base]
+        latitude: { type: number }
+        longitude: { type: number }
+        country:
+          type: object
+          properties:
+            name: { type: string, nullable: true }
+            code: { type: string, nullable: true }
+    Profile:
+      type: object
+      required: [id, name]
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        countryId: { type: integer, nullable: true }
+    OnlineCompetition:
+      type: object
+      required: [id, name, discipline]
+      properties:
+        id: { type: integer }
+        name: { type: string }
+        discipline: { type: string }
+        range_from: { type: number, nullable: true }
+        range_to: { type: number, nullable: true }
+        group:
+          type: object
+          nullable: true
+          properties:
+            id: { type: integer }
+            name: { type: string }
+    PageMeta:
+      type: object
+      required: [currentPage, totalPages, totalCount]
+      properties:
+        currentPage: { type: integer }
+        totalPages: { type: integer }
+        totalCount: { type: integer }
