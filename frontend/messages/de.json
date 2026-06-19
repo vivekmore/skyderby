@@ -6,7 +6,14 @@
     "profiles": "Athleten",
     "onlineCompetitions": "Online-Wettbewerbe",
     "trackViewer": "Track-Ansicht",
+    "membership": "Mitgliedschaft",
     "search": "Suche"
+  },
+  "membership": {
+    "title": "Mitgliedschaft",
+    "subtitle": "Unterstütze Skyderby und schalte Premium-Funktionen frei.",
+    "cta": "Abo verwalten",
+    "note": "Bezahlung und Abrechnung erfolgen sicher auf der Haupt-Website von Skyderby."
   },
   "places": {
     "title": "Orte",

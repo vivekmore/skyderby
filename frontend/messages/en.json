@@ -6,7 +6,14 @@
     "profiles": "Athletes",
     "onlineCompetitions": "Online competitions",
     "trackViewer": "Track viewer",
+    "membership": "Membership",
     "search": "Search"
+  },
+  "membership": {
+    "title": "Membership",
+    "subtitle": "Support Skyderby and unlock premium features.",
+    "cta": "Manage your subscription",
+    "note": "Checkout and billing are handled securely on the main Skyderby site."
   },
   "places": {
     "title": "Places",

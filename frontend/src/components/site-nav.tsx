@@ -11,6 +11,7 @@ const ITEMS = [
   { href: '/profiles', key: 'profiles' as const },
   { href: '/online-competitions', key: 'onlineCompetitions' as const },
   { href: '/tracks/demo', key: 'trackViewer' as const },
+  { href: '/membership', key: 'membership' as const },
   { href: '/search', key: 'search' as const },
 ]
 
