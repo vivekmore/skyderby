@@ -36,3 +36,18 @@ export async function apiGet<T>(path: string, options: ApiGetOptions = {}): Prom
 
   return (await res.json()) as T
 }
+
+/** GET a site-level (non /api/v1) JSON endpoint, e.g. public track points. */
+export async function siteGet<T>(path: string, options: ApiGetOptions = {}): Promise<T> {
+  const res = await fetch(`${apiBaseUrl()}${path}`, {
+    headers: { Accept: 'application/json' },
+    signal: options.signal,
+    next: options.revalidate !== undefined ? { revalidate: options.revalidate } : undefined,
+  })
+
+  if (!res.ok) {
+    throw new ApiError(`GET ${path} failed with ${res.status}`, res.status)
+  }
+
+  return (await res.json()) as T
+}

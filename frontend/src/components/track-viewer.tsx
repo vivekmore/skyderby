@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic'
 import { useTranslations } from 'next-intl'
-import { sampleJump } from '@/lib/sample-jump'
+import type { TrackPoint } from '@/lib/api/types'
 
 const TrackChart = dynamic(() => import('./track-chart').then((m) => m.TrackChart), {
   ssr: false,
@@ -18,13 +18,12 @@ function ChartSkeleton() {
   return <div className="h-80 animate-pulse rounded-md bg-slate-100" />
 }
 
-export function TrackViewer() {
+export function TrackViewer({ points, isSample }: { points: TrackPoint[]; isSample: boolean }) {
   const t = useTranslations('viewer')
-  const points = sampleJump()
 
   return (
     <div className="space-y-4">
-      <p className="text-sm text-slate-500">{t('sampleNotice')}</p>
+      {isSample ? <p className="text-sm text-slate-500">{t('sampleNotice')}</p> : null}
       <div className="rounded-lg border border-slate-200 bg-white p-4">
         <TrackChart points={points} />
       </div>
