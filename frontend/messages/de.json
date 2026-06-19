@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Start",
+    "suits": "Anzüge",
+    "onlineCompetitions": "Online-Wettbewerbe",
+    "trackViewer": "Track-Ansicht"
+  },
+  "home": {
+    "title": "Skyderby",
+    "tagline": "GPS-Track-Analyse, Ranglisten und Wettbewerbswertung für Fallschirm- und BASE-Springer.",
+    "exploreSuits": "Anzugkatalog ansehen",
+    "exploreCompetitions": "Online-Wettbewerbe ansehen",
+    "exploreViewer": "Track-Ansicht öffnen"
+  },
+  "suits": {
+    "title": "Anzugkatalog",
+    "subtitle": "Alle Wingsuits, Tracksuits und Slicks in der Datenbank.",
+    "search": "Anzüge oder Hersteller suchen",
+    "category": "Kategorie",
+    "allCategories": "Alle Kategorien",
+    "columns": {
+      "name": "Anzug",
+      "make": "Hersteller",
+      "category": "Kategorie"
+    },
+    "categories": {
+      "wingsuit": "Wingsuit",
+      "tracksuit": "Tracksuit",
+      "slick": "Slick"
+    },
+    "count": "{count, plural, =0 {Keine Anzüge} one {# Anzug} other {# Anzüge}}",
+    "empty": "Keine Anzüge entsprechen deiner Suche."
+  },
+  "competitions": {
+    "title": "Online-Wettbewerbe",
+    "subtitle": "Offene Ranglisten, an denen du mit eigenen Tracks teilnehmen kannst.",
+    "columns": {
+      "name": "Wettbewerb",
+      "discipline": "Disziplin",
+      "group": "Gruppe"
+    },
+    "empty": "Derzeit sind keine Online-Wettbewerbe verfügbar."
+  },
+  "viewer": {
+    "title": "Track-Ansicht",
+    "subtitle": "Geschwindigkeit, Gleitzahl und Höhe über den Sprung hinweg, mit der geflogenen Strecke auf der Karte.",
+    "speed": "Geschwindigkeit",
+    "glide": "Gleitzahl",
+    "altitude": "Höhe",
+    "horizontalSpeed": "Horizontalgeschwindigkeit",
+    "verticalSpeed": "Vertikalgeschwindigkeit",
+    "trajectory": "Strecke",
+    "mapKeyMissing": "Setze NEXT_PUBLIC_GOOGLE_MAPS_API_KEY, um die Karte anzuzeigen.",
+    "sampleNotice": "Es wird ein Beispielsprung angezeigt."
+  },
+  "errors": {
+    "loadFailed": "Daten konnten nicht von der API geladen werden. Läuft der Rails-Server?"
+  }
+}

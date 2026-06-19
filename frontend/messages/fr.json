@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "suits": "Combinaisons",
+    "onlineCompetitions": "Compétitions en ligne",
+    "trackViewer": "Visualiseur de tracks"
+  },
+  "home": {
+    "title": "Skyderby",
+    "tagline": "Analyse des tracks GPS, classements et notation des compétitions pour parachutistes et base jumpers.",
+    "exploreSuits": "Parcourir le catalogue de combinaisons",
+    "exploreCompetitions": "Voir les compétitions en ligne",
+    "exploreViewer": "Ouvrir le visualiseur de tracks"
+  },
+  "suits": {
+    "title": "Catalogue de combinaisons",
+    "subtitle": "Toutes les wingsuits, tracksuits et slicks de la base de données.",
+    "search": "Rechercher des combinaisons ou fabricants",
+    "category": "Catégorie",
+    "allCategories": "Toutes les catégories",
+    "columns": {
+      "name": "Combinaison",
+      "make": "Fabricant",
+      "category": "Catégorie"
+    },
+    "categories": {
+      "wingsuit": "Wingsuit",
+      "tracksuit": "Tracksuit",
+      "slick": "Slick"
+    },
+    "count": "{count, plural, =0 {Aucune combinaison} one {# combinaison} other {# combinaisons}}",
+    "empty": "Aucune combinaison ne correspond à votre recherche."
+  },
+  "competitions": {
+    "title": "Compétitions en ligne",
+    "subtitle": "Classements ouverts auxquels participer avec vos propres tracks.",
+    "columns": {
+      "name": "Compétition",
+      "discipline": "Discipline",
+      "group": "Groupe"
+    },
+    "empty": "Aucune compétition en ligne n'est disponible pour le moment."
+  },
+  "viewer": {
+    "title": "Visualiseur de tracks",
+    "subtitle": "Vitesse, finesse et altitude au cours du saut, avec la trajectoire sur la carte.",
+    "speed": "Vitesse",
+    "glide": "Finesse",
+    "altitude": "Altitude",
+    "horizontalSpeed": "Vitesse horizontale",
+    "verticalSpeed": "Vitesse verticale",
+    "trajectory": "Trajectoire",
+    "mapKeyMissing": "Définissez NEXT_PUBLIC_GOOGLE_MAPS_API_KEY pour afficher la carte.",
+    "sampleNotice": "Un saut d'exemple est affiché."
+  },
+  "errors": {
+    "loadFailed": "Impossible de charger les données de l'API. Le serveur Rails est-il démarré ?"
+  }
+}

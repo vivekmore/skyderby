@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Home",
+    "suits": "Tute",
+    "onlineCompetitions": "Competizioni online",
+    "trackViewer": "Visualizzatore tracce"
+  },
+  "home": {
+    "title": "Skyderby",
+    "tagline": "Analisi delle tracce GPS, classifiche e punteggi per paracadutisti e BASE jumper.",
+    "exploreSuits": "Sfoglia il catalogo tute",
+    "exploreCompetitions": "Vedi le competizioni online",
+    "exploreViewer": "Apri il visualizzatore tracce"
+  },
+  "suits": {
+    "title": "Catalogo tute",
+    "subtitle": "Tutte le wingsuit, tracksuit e slick presenti nel database.",
+    "search": "Cerca tute o produttori",
+    "category": "Categoria",
+    "allCategories": "Tutte le categorie",
+    "columns": {
+      "name": "Tuta",
+      "make": "Produttore",
+      "category": "Categoria"
+    },
+    "categories": {
+      "wingsuit": "Wingsuit",
+      "tracksuit": "Tracksuit",
+      "slick": "Slick"
+    },
+    "count": "{count, plural, =0 {Nessuna tuta} one {# tuta} other {# tute}}",
+    "empty": "Nessuna tuta corrisponde alla ricerca."
+  },
+  "competitions": {
+    "title": "Competizioni online",
+    "subtitle": "Classifiche aperte a cui partecipare con le proprie tracce.",
+    "columns": {
+      "name": "Competizione",
+      "discipline": "Disciplina",
+      "group": "Gruppo"
+    },
+    "empty": "Al momento non ci sono competizioni online disponibili."
+  },
+  "viewer": {
+    "title": "Visualizzatore tracce",
+    "subtitle": "Velocità, planata e quota durante il salto, con la traiettoria sulla mappa.",
+    "speed": "Velocità",
+    "glide": "Rapporto di planata",
+    "altitude": "Quota",
+    "horizontalSpeed": "Velocità orizzontale",
+    "verticalSpeed": "Velocità verticale",
+    "trajectory": "Traiettoria",
+    "mapKeyMissing": "Imposta NEXT_PUBLIC_GOOGLE_MAPS_API_KEY per mostrare la mappa.",
+    "sampleNotice": "Viene mostrato un salto di esempio."
+  },
+  "errors": {
+    "loadFailed": "Impossibile caricare i dati dall'API. Il server Rails è in esecuzione?"
+  }
+}
