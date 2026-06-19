@@ -191,7 +191,13 @@ class Track < ApplicationRecord
     def search(query)
       return all if query.blank?
 
-      where('unaccent(comment) ILIKE unaccent(?)', "%#{query}%")
+      left_joins(:pilot, :place)
+        .where(
+          'unaccent(tracks.comment) ILIKE unaccent(:q) ' \
+          'OR unaccent(profiles.name) ILIKE unaccent(:q) ' \
+          'OR unaccent(places.name) ILIKE unaccent(:q)',
+          q: "%#{query}%"
+        )
     end
 
     def accessible(user: Current.user)

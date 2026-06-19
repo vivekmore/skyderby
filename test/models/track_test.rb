@@ -1,6 +1,47 @@
 require 'test_helper'
 
 class TrackTest < ActiveSupport::TestCase
+  test '.search - blank query returns all tracks' do
+    assert_equal Track.all.to_a.sort, Track.search(nil).to_a.sort
+    assert_equal Track.all.to_a.sort, Track.search('').to_a.sort
+    assert_equal Track.all.to_a.sort, Track.search(' ').to_a.sort
+  end
+
+  test '.search - matches by comment' do
+    track = tracks(:hellesylt)
+    track.update_columns(comment: 'Sunset wingsuit flight')
+
+    assert_includes Track.search('wingsuit'), track
+  end
+
+  test '.search - matches by pilot name' do
+    track = tracks(:hellesylt)
+    track.update!(pilot: profiles(:maynard), comment: 'no match here')
+
+    assert_includes Track.search('Maynard'), track
+  end
+
+  test '.search - matches by place name' do
+    track = tracks(:hellesylt)
+    track.update!(place: places(:loen), comment: 'no match here')
+
+    assert_includes Track.search('Loen'), track
+  end
+
+  test '.search - is case and accent insensitive' do
+    track = tracks(:hellesylt)
+    track.update!(pilot: profiles(:maynard), comment: 'no match here')
+
+    assert_includes Track.search('maynard'), track
+  end
+
+  test '.search - keeps tracks without a pilot or place' do
+    track = tracks(:hellesylt)
+    track.update_columns(profile_id: nil, place_id: nil, name: 'Orphan track', comment: 'lonely flight')
+
+    assert_includes Track.search('lonely'), track
+  end
+
   test 'validations - requires name if pilot not specified' do
     track = tracks(:hellesylt)
     track.pilot = nil
